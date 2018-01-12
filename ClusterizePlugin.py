@@ -10,13 +10,15 @@ def readClusterFile(myfile):
       if (vals[0] == "\"\""):
           clusters.append([])
       else:
-          clusters[len(clusters)-1].append(vals[1][1:len(vals[1])-3].strip())
+          clusters[len(clusters)-1].append(vals[1][1:len(vals[1])-2].strip())
+   print clusters
    return clusters
 
 def inSameCluster(bac1, bac2, clusters):
    if (bac1[0] == '\"'):
       bac1 = bac1[1:len(bac1)-1]
       bac2 = bac2[1:len(bac2)-1]
+   #print "COMPARING: ", bac1, " AND ", bac2
    for i in range(len(clusters)):
       if (clusters[i].count(bac1) > 0):
          if (clusters[i].count(bac2) > 0):
