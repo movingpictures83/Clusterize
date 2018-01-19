@@ -11,7 +11,6 @@ def readClusterFile(myfile):
           clusters.append([])
       else:
           clusters[len(clusters)-1].append(vals[1][1:len(vals[1])-2].strip())
-   print clusters
    return clusters
 
 def inSameCluster(bac1, bac2, clusters):
