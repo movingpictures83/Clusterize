@@ -2,6 +2,7 @@
 # Language: Python
 # Input: prefix (for CSV files for network and clusters)
 # Output: CSV (network with only edges between nodes in the same cluster)
+# Tested with: PluMA 1.0, Python 2.7
 
 PluMA plugin which takes a CSV file representing a network and removes all edges between
 nodes in different clusters.
