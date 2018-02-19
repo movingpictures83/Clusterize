@@ -17,13 +17,11 @@ def inSameCluster(bac1, bac2, clusters):
    if (bac1[0] == '\"'):
       bac1 = bac1[1:len(bac1)-1]
       bac2 = bac2[1:len(bac2)-1]
-   #print "COMPARING: ", bac1, " AND ", bac2
    for i in range(len(clusters)):
       if (clusters[i].count(bac1) > 0):
          if (clusters[i].count(bac2) > 0):
             return True
          else:
-            #print "Removing edge ", bac1, " to ", bac2
             return False
 
 
