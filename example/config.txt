@@ -1,0 +1,2 @@
+Prefix plugins/Clusterize/example/
+Plugin Clusterize inputfile corrP outputfile corrP.clusterized.csv
