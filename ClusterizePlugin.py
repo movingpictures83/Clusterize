@@ -45,7 +45,7 @@ class ClusterizePlugin(CSV2GMLPlugin):
             if (inSameCluster(self.bacteria[i], self.bacteria[j], self.clusters)):
                filestuff.write(str(abs(self.ADJ[i][j]))+",")
             else:
-	       filestuff.write("0,")
+               filestuff.write("0,")
          if (inSameCluster(self.bacteria[i], self.bacteria[self.n-1], self.clusters)):
             filestuff.write(str(self.ADJ[i][self.n-1]))
          else:
